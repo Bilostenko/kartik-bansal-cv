@@ -1,5 +1,126 @@
-body{
+#chromeperfectpixel-panel-container,
+.chromeperfectpixel-portal,
+.chromeperfectpixel-overlay,
+.chromeperfectpixel-overlay-container {
+  pointer-events: none !important;
+}
+
+body {
   font-family: 'Poppins', sans-serif;
   color: #fff;
-  font-weight: 600; 
+  font-weight: 600;
+  background-color: #212529;
+}
+
+/* ---HEADER--- */
+.header {
+  width: 100%;
+  height: 66px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1342px;
+  margin: 0 auto;
+  margin-top: 17px;
+
+}
+
+.header__navigation {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  color: #fff;
+  font-family: Poppins;
+  font-style: SemiBold;
+  font-size: 18px;
+  padding-top: 6px;
+
+}
+
+.header__navigation>li:hover {
+  color: #FFB742;
+}
+
+
+.btn {
+  background-color: #FFB742;
+  border-radius: 50px;
+  width: 121px;
+  height: 54px;
+  border-style: none;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+/* --HERO-- */
+.hero {
+  height: 703px;
+  width: 100%;
+  text-align: center;
+  padding-top: 118px;
+  box-sizing: border-box;
+}
+
+.hero__name-intro {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.hero__name {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  color: rgba(255, 183, 66, 1);
+  text-decoration: underline;
+  margin-bottom: 25px;
+}
+
+.hero__title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+
+.hero__text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 22px;
+}
+
+/* --COUNTERS-- */
+.counters__group {
+  display: flex;
+}
+
+.counters__counter {
+  width: 416px;
+  height: 120px;
+  background-color: rgba(56, 62, 69, 0.44);
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding: 28px 30px;
+  box-sizing: border-box;
+}
+
+.counter__btn {
+  border: none;
+  background: none;
+  background-image: url(./img/icons-counter/arrow.svg);
+  width: 42px;
+  height: 42px;
+  background-repeat: no-repeat;
+  background-position: center;
+  
 }
