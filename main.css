@@ -39,6 +39,7 @@ body {
 
 .header__navigation>li:hover {
   color: #FFB742;
+  cursor: pointer;
 }
 
 
@@ -100,6 +101,12 @@ body {
 /* --COUNTERS-- */
 .counters__group {
   display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.counters__group>li:hover {
+  background: linear-gradient(94.3deg, #FFB742 0%, rgba(255, 123, 66, 0.76) 99.33%);
 }
 
 .counters__counter {
@@ -114,6 +121,11 @@ body {
   box-sizing: border-box;
 }
 
+.counter__number {
+  display: flex;
+  justify-content: center;
+}
+
 .counter__btn {
   border: none;
   background: none;
@@ -122,5 +134,237 @@ body {
   height: 42px;
   background-repeat: no-repeat;
   background-position: center;
-  
+}
+
+/* ---ABOUT--- */
+.about {
+  margin-top: 255px;
+  width: 100%;
+  display: flex;
+  gap: 92px;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 250px;
+}
+
+.label {
+  padding: 6px 25px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50px;
+  width: max-content;
+  height: max-content;
+  color: #FFB742;
+}
+
+.title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 29px;
+}
+
+.about__text {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #D5D5D5;
+  width: 672px;
+  height: 177px;
+}
+
+/* ---SKILLS-- */
+.skills {
+  display: flex;
+  width: 1339px;
+  height: 358.29px;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 97px;
+}
+
+.skills__content {
+  display: flex;
+  flex-direction: column;
+  width: 672px;
+}
+
+.skills__title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  margin-bottom: 30px;
+}
+
+.skills__text {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 63px;
+}
+
+.skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 560px;
+  height: 176px;
+  box-sizing: border-box;
+}
+
+.skills__list>li {
+  padding: 5px;
+}
+
+/* ---WORKS--- */
+.works {
+  width: 1234px;
+  height: 1038.41px;
+  margin: 0 auto;
+  margin-top: 137px;
+  display: flex;
+  flex-direction: column;
+}
+
+.works__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.works__work-menu {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 48px;
+}
+
+.works__work-menu>li:hover {
+  background: #FFB742;
+  border-radius: 3px;
+  color: black;
+}
+
+.works__work-menu-list {
+  padding: 5px 20px;
+}
+
+.works__examples-list {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  gap: 34px;
+}
+
+
+/* ---TESTIMONIALS-- */
+.testimonials {
+  width: 1216.91px;
+  height: 641.85px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonials__label {
+  margin-left: 100px;
+}
+
+.testimonials__title {
+  margin-bottom: 90px;
+}
+
+.testimonials__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.testimonials__cards {
+  width: 378.91px;
+  height: 455.11px;
+  background: #FFFFFF;
+  border-radius: 7.92699px;
+
+}
+
+.testimonials__stars {
+  color: #FFB742;
+}
+
+.testimonial__text {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  color: #000000;
+}
+
+.testimonials__personal-title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000000;
+}
+
+.testimonials__personal-position {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+
+/* --FOOTER-- */
+.footer {
+  height: 470px;
+  width: 1440px;
+  margin: 0 auto;
+  background-color: #1C1C1C;
+  margin-top: 253px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer__header {
+  text-decoration: none;
+}
+
+.footer__text {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+}
+.bold {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21.5865px;
+  color: #F5FBF2 !important;
+}
+
+.footer__link, .footer__newsletter-text {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17.9888px;
+  line-height: 36px;
+  color: #7B7B7B;
+}
+.footer__newsletter{
+  margin-top: -110px;
+}
+
+.footer__links > li:hover{
+  color: #FFB742;
+  cursor: pointer;
 }
