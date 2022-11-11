@@ -19,11 +19,11 @@
   <header class="header">
     <img class="header__logo" src="./img/header-logo.svg" alt="logo">
     <ul class="header__navigation">
-      <li>Home</li>
-      <li>About</li>
-      <li>Skills</li>
-      <li>Portfolio</li>
-      <li>Contact</li>
+      <li id="home">Home</li>
+      <li id="about">About</li>
+      <li id="skills">Skills</li>
+      <li id="portfolio">Portfolio</li>
+      <li id="contact">Contact</li>
     </ul>
     <button class="header__btn btn">Hire Me</button>
   </header>
@@ -98,9 +98,9 @@
           done with less effort and time with those technologies.</p>
         <button class="skills__btn btn">Hire Me</button>
       </div>
-      <div class="skills__icons">
+      <div class="skills__icons" id="skillshref">
         <ul class="skills__list">
-          <li class="skills__icon">
+          <li class="skills__icon" >
             <img src="./img/skills-icons/html.svg" alt="html icon">
           </li>
           <li class="skills__icon">
@@ -171,36 +171,65 @@
       <div class="testimonials__wrapper">
         <!-- CARD-1 -->
         <div class="testimonials__cards testimonials__card1">
-          <p class="testimonials__stars">&#9733 &#9733 &#9733 &#9733 &#9733</p>
-          <!-- li*5 -->
-          <p class="testimonial__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit
-            amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus</p>
-          <div class="testimonials__personal">
-            <img src="./img/testimonials-ava.svg" alt="avatar" class="testimonials__ava">
-            <h5 class="testimonials__personal-title">Khushi Gupta</h5>
-            <p class="testimonials__personal-position">Designer</p>
+          <div class="testimonials__card-wrapper">
+            <ul class="testimonials__stars">
+              <li class="testimonial__star">&#9733</li>
+              <li class="testimonial__star">&#9733</li>
+              <li class="testimonial__star">&#9733</li>
+              <li class="testimonial__star">&#9733</li>
+              <li class="testimonial__star">&#9733</li>
+            </ul>
+            <p class="testimonial__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit
+              amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus</p>
+            <div class="testimonials__personal">
+              <img src="./img/testimonials-ava.svg" alt="avatar" class="testimonials__ava">
+              <div class="testimonial__colum-wrapper">
+                <h5 class="testimonials__personal-title">Khushi Gupta</h5>
+                <p class="testimonials__personal-position">Designer</p>
+              </div>
+            </div>
           </div>
         </div>
         <!-- CARD-2 -->
         <div class="testimonials__cards testimonials__card2">
-          <p class="testimonials__stars">&#9733 &#9733 &#9733 &#9733 &#9733</p>
-          <p class="testimonial__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit
-            amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus</p>
-          <div class="testimonials__personal">
-            <img src="./img/testimonials-ava.svg" alt="avatar" class="testimonials__ava">
-            <h5 class="testimonials__personal-title">Khushi Gupta</h5>
-            <p class="testimonials__personal-position">Designer</p>
+          <div class="testimonials__card-wrapper">
+            <ul class="testimonials__stars">
+              <li class="testimonial__star">&#9733</li>
+              <li class="testimonial__star">&#9733</li>
+              <li class="testimonial__star">&#9733</li>
+              <li class="testimonial__star">&#9733</li>
+              <li class="testimonial__star">&#9733</li>
+            </ul>
+            <p class="testimonial__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit
+              amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus</p>
+            <div class="testimonials__personal">
+              <img src="./img/testimonials-ava.svg" alt="avatar" class="testimonials__ava">
+              <div class="testimonial__colum-wrapper">
+                <h5 class="testimonials__personal-title">Khushi Gupta</h5>
+                <p class="testimonials__personal-position">Designer</p>
+              </div>
+            </div>
           </div>
         </div>
         <!-- CARD-3 -->
         <div class="testimonials__cards testimonials__card3">
-          <p class="testimonials__stars">&#9733 &#9733 &#9733 &#9733 &#9733</p>
-          <p class="testimonial__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit
-            amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus</p>
-          <div class="testimonials__personal">
-            <img src="./img/testimonials-ava.svg" alt="avatar" class="testimonials__ava">
-            <h5 class="testimonials__personal-title">Khushi Gupta</h5>
-            <p class="testimonials__personal-position">Designer</p>
+          <div class="testimonials__card-wrapper">
+            <ul class="testimonials__stars">
+              <li class="testimonial__star">&#9733</li>
+              <li class="testimonial__star">&#9733</li>
+              <li class="testimonial__star">&#9733</li>
+              <li class="testimonial__star">&#9733</li>
+              <li class="testimonial__star">&#9733</li>
+            </ul>
+            <p class="testimonial__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit
+              amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus</p>
+            <div class="testimonials__personal">
+              <img src="./img/testimonials-ava.svg" alt="avatar" class="testimonials__ava">
+              <div class="testimonial__colum-wrapper">
+                <h5 class="testimonials__personal-title">Khushi Gupta</h5>
+                <p class="testimonials__personal-position">Designer</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -216,21 +245,21 @@
       <div class="footer__links-wrapper">
         <ul class="footer__links">
           <li class="footer__link bold">Useful Links</li>
-          <li class="footer__link">Home</li>
-          <li class="footer__link">About</li>
-          <li class="footer__link">Skills</li>
-          <li class="footer__link">Portfolio</li>
-          <li class="footer__link">Contact</li>
+          <li class="footer__link"><a href="#home">Home</a></li>
+          <li class="footer__link"><a href="#about">About</a> </li>
+          <li class="footer__link"><a href="#skills">Skills</a> </li>
+          <li class="footer__link"><a href="#portfolio">Portfolio</a> </li>
+          <li class="footer__link"><a href="#contact">Contact</a> </li>
         </ul>
       </div>
       <div class="footer__media-wrapper">
         <ul class="footer__links">
           <li class="footer__link bold">Social Media</li>
-          <li class="footer__link">Instagram</li>
-          <li class="footer__link">linkedin</li>
-          <li class="footer__link">Dribbble</li>
-          <li class="footer__link">Behance</li>
-          <li class="footer__link">Github</li>
+          <li class="footer__link"><a href="#skillshref">Instagram</a> </li>
+          <li class="footer__link"><a href="#skillshref">linkedin</a> </li>
+          <li class="footer__link"><a href="#skillshref">Dribbble</a> </li>
+          <li class="footer__link"><a href="#skillshref">Behance</a> </li>
+          <li class="footer__link"><a href="#skillshref">Github</a> </li>
         </ul>
       </div>
       <div class="footer__newsletter">
